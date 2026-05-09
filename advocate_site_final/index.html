@@ -1,0 +1,710 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Adv. Sanjeev Desai Legal Services</title>
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#050505;
+color:#fff;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:15px 60px;
+background:#000;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+border-bottom:1px solid #d4af37;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo i{
+font-size:40px;
+color:#d4af37;
+}
+
+.logo h2{
+font-size:24px;
+color:#d4af37;
+font-weight:700;
+}
+
+.logo p{
+font-size:12px;
+letter-spacing:4px;
+}
+
+nav ul{
+display:flex;
+gap:35px;
+list-style:none;
+}
+
+nav ul li a{
+text-decoration:none;
+color:#fff;
+font-size:14px;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#d4af37;
+}
+
+.call-btn{
+background:#d4af37;
+padding:12px 22px;
+border-radius:5px;
+color:#000;
+font-weight:600;
+text-decoration:none;
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+/* HERO */
+
+.hero{
+min-height:100vh;
+padding:150px 70px 80px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:
+linear-gradient(rgba(0,0,0,.88),rgba(0,0,0,.88)),
+url('C:/Users/sachi/Download/advocate_site_final/images/profile.png');
+
+background-size:cover;
+background-position:center;
+}
+
+.hero-content{
+max-width:50%;
+animation:fadeLeft 1s ease;
+}
+
+.hero-content h3{
+font-size:42px;
+color:#d4af37;
+margin-bottom:10px;
+}
+
+.hero-content h1{
+font-size:95px;
+line-height:95px;
+margin-bottom:10px;
+}
+
+.hero-content h2{
+font-size:48px;
+color:#d4af37;
+margin-bottom:25px;
+}
+
+.hero-content p{
+font-size:21px;
+line-height:38px;
+margin-bottom:35px;
+color:#ddd;
+}
+
+.hero-btn{
+display:inline-flex;
+align-items:center;
+gap:12px;
+padding:16px 28px;
+background:#d4af37;
+color:#000;
+font-weight:700;
+text-decoration:none;
+transition:.3s;
+}
+
+.hero-btn:hover{
+transform:translateY(-5px);
+}
+
+.hero-image{
+animation:fadeRight 1s ease;
+}
+
+.hero-image img{
+width:550px;
+border-radius:12px;
+box-shadow:0 0 30px rgba(0,0,0,.6);
+}
+
+/* ABOUT */
+
+.about{
+padding:90px 70px;
+display:flex;
+gap:60px;
+align-items:center;
+background:#070707;
+}
+
+.about-image img{
+width:350px;
+border:2px solid #d4af37;
+border-radius:10px;
+}
+
+.about-content h4{
+font-size:32px;
+color:#d4af37;
+margin-bottom:15px;
+}
+
+.about-content h2{
+font-size:52px;
+margin-bottom:20px;
+}
+
+.about-content p{
+font-size:19px;
+line-height:36px;
+color:#ddd;
+}
+
+.info{
+display:flex;
+gap:25px;
+margin-top:35px;
+flex-wrap:wrap;
+}
+
+.info div{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:16px;
+}
+
+.info i{
+color:#d4af37;
+}
+
+/* PRACTICE */
+
+.practice{
+padding:90px 70px;
+text-align:center;
+}
+
+.practice h2{
+font-size:52px;
+color:#d4af37;
+margin-bottom:50px;
+}
+
+.practice-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+padding:40px 25px;
+border:1px solid #d4af37;
+border-radius:12px;
+transition:.4s;
+background:#0a0a0a;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px rgba(212,175,55,.3);
+}
+
+.card i{
+font-size:52px;
+color:#d4af37;
+margin-bottom:20px;
+}
+
+.card h3{
+font-size:28px;
+margin-bottom:18px;
+}
+
+.card p{
+line-height:30px;
+color:#ddd;
+}
+
+/* EXPERIENCE */
+
+.experience{
+background:#f4f4f4;
+color:#000;
+padding:90px 70px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:60px;
+}
+
+.left h1{
+font-size:120px;
+color:#d4af37;
+}
+
+.left h3{
+font-size:35px;
+}
+
+.right p{
+font-size:20px;
+margin:18px 0;
+}
+
+/* CONTACT */
+
+.contact{
+padding:90px 70px;
+display:flex;
+justify-content:space-between;
+gap:50px;
+background:#070707;
+}
+
+.contact-left h2{
+font-size:52px;
+color:#d4af37;
+margin-bottom:25px;
+}
+
+.contact-left p{
+font-size:20px;
+margin:22px 0;
+line-height:35px;
+}
+
+.contact-left i{
+color:#d4af37;
+margin-right:12px;
+}
+
+.map iframe{
+width:650px;
+height:380px;
+border:none;
+border-radius:10px;
+}
+
+/* FOOTER */
+
+footer{
+padding:20px;
+text-align:center;
+background:#000;
+border-top:1px solid #d4af37;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+width:75px;
+height:75px;
+background:#25D366;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+font-size:42px;
+color:#fff;
+text-decoration:none;
+box-shadow:0 0 20px rgba(0,0,0,.5);
+z-index:999;
+transition:.3s;
+}
+
+.whatsapp:hover{
+transform:scale(1.1);
+}
+
+/* ANIMATION */
+
+@keyframes fadeLeft{
+from{
+opacity:0;
+transform:translateX(-50px);
+}
+to{
+opacity:1;
+transform:translateX(0);
+}
+}
+
+@keyframes fadeRight{
+from{
+opacity:0;
+transform:translateX(50px);
+}
+to{
+opacity:1;
+transform:translateX(0);
+}
+}
+
+/* MOBILE */
+
+@media(max-width:1000px){
+
+nav{
+flex-direction:column;
+gap:20px;
+padding:20px;
+}
+
+.hero{
+flex-direction:column;
+text-align:center;
+padding-top:220px;
+}
+
+.hero-content{
+max-width:100%;
+}
+
+.hero-content h1{
+font-size:60px;
+line-height:65px;
+}
+
+.hero-content h2{
+font-size:35px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+.hero-image img{
+width:100%;
+margin-top:40px;
+}
+
+.about{
+flex-direction:column;
+}
+
+.contact{
+flex-direction:column;
+}
+
+.map iframe{
+width:100%;
+}
+
+.experience{
+flex-direction:column;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">
+
+<i class="fa-solid fa-scale-balanced"></i>
+
+<div>
+<h2>ADV. SANJEEV DESAI</h2>
+<p>LEGAL SERVICES</p>
+</div>
+
+</div>
+
+<ul>
+
+<li><a href="#">HOME</a></li>
+<li><a href="#about">ABOUT</a></li>
+<li><a href="#practice">PRACTICE AREAS</a></li>
+<li><a href="#experience">EXPERIENCE</a></li>
+<li><a href="#contact">CONTACT</a></li>
+
+</ul>
+
+<a href="tel:9850891434" class="call-btn">
+<i class="fa-solid fa-phone"></i>
+9850891434
+</a>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h3>ADVOCATE</h3>
+
+<h1>SANJEEV DESAI</h1>
+
+<h2>LEGAL SERVICES</h2>
+
+<p>
+22+ Years of Experience in Handling Civil, Criminal,
+Family & Labour Court Cases with Commitment,
+Dedication and Excellence.
+</p>
+
+<a href="#contact" class="hero-btn">
+CONTACT NOW
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="C:/Users/sachi/Download/advocate_site_final/images/profile.png" alt="Advocate">
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<div class="about-image">
+
+<img src="C:/Users/sachi/Download/advocate_site_final/images/profile.png">
+
+</div>
+
+<div class="about-content">
+
+<h4>ABOUT ME</h4>
+
+<h2>Adv. Sanjeev Desai</h2>
+
+<p>
+I am Advocate Sanjeev Desai, practicing in Pune
+with over 22 years of experience in handling and
+successfully resolving a wide range of Civil,
+Criminal, Family and Labour Court cases.
+</p>
+
+<div class="info">
+
+<div>
+<i class="fa-solid fa-phone"></i>
+9850891434
+</div>
+
+<div>
+<i class="fa-solid fa-location-dot"></i>
+Pune, Maharashtra
+</div>
+
+<div>
+<i class="fa-solid fa-envelope"></i>
+Legal Services
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PRACTICE -->
+
+<section class="practice" id="practice">
+
+<h2>PRACTICE AREAS</h2>
+
+<div class="practice-grid">
+
+<div class="card">
+
+<i class="fa-solid fa-gavel"></i>
+
+<h3>CIVIL LAW</h3>
+
+<p>
+Land matters, Succession certificate,
+Tenant disputes, Corporation disputes.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-scale-balanced"></i>
+
+<h3>CRIMINAL LAW</h3>
+
+<p>
+Bail, Anticipatory Bail, Fraud,
+Cheque bouncing, Defamation.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-people-group"></i>
+
+<h3>FAMILY LAW</h3>
+
+<p>
+Divorce, Maintenance, 498A,
+Domestic Violence, Mutual Consent.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-briefcase"></i>
+
+<h3>LABOUR LAW</h3>
+
+<p>
+Handling all Labour Court
+and industrial dispute matters.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- EXPERIENCE -->
+
+<section class="experience" id="experience">
+
+<div class="left">
+
+<h1>22+</h1>
+
+<h3>YEARS OF EXPERIENCE</h3>
+
+</div>
+
+<div class="right">
+
+<p>✔ Successfully handled thousands of cases.</p>
+
+<p>✔ Personalized attention to every client.</p>
+
+<p>✔ Strong courtroom presence and legal knowledge.</p>
+
+<p>✔ Dedicated legal solutions with trust and justice.</p>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div class="contact-left">
+
+<h2>CONTACT ME</h2>
+
+<p>
+<i class="fa-solid fa-phone"></i>
+9850891434
+</p>
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+Kedar Empire Building, 4th Floor,
+Paud Phata, Karve Road, Pune
+</p>
+
+<p>
+<i class="fa-solid fa-clock"></i>
+Mon - Sat : 10:00 AM - 7:00 PM
+</p>
+
+</div>
+
+<div class="map">
+
+<iframe
+src="https://maps.google.com/maps?q=paud%20phata%20pune&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+© 2025 Adv. Sanjeev Desai Legal Services.
+All Rights Reserved.
+
+</footer>
+
+<!-- WHATSAPP -->
+
+<a href="https://wa.me/919850891434" class="whatsapp">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+</body>
+</html>
+```
