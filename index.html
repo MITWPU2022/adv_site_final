@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -108,11 +109,11 @@ align-items:center;
 
 background:
 linear-gradient(rgba(0,0,0,.88),rgba(0,0,0,.88)),
-url('C:/Users/sachi/Download/advocate_site_final/images/profile.png');
+url('https://raw.githubusercontent.com/MITWPU2022/advocate_site_final/main/images/profile.jpg');
 
 background-size:cover;
 background-position:center;
-background-repeat:no-repeat;
+background-attachment:fixed;
 }
 
 .hero-content{
@@ -155,6 +156,7 @@ color:#000;
 font-weight:700;
 text-decoration:none;
 transition:.3s;
+border-radius:6px;
 }
 
 .hero-btn:hover{
@@ -166,11 +168,10 @@ animation:fadeRight 1s ease;
 }
 
 .hero-image img{
-width:550px;
-border-radius:12px;
-box-shadow:0 0 30px rgba(0,0,0,.6);
+width:520px;
+border-radius:15px;
 border:3px solid #d4af37;
-object-fit:cover;
+box-shadow:0 0 30px rgba(0,0,0,.6);
 }
 
 /* ABOUT */
@@ -187,7 +188,7 @@ background:#070707;
 width:350px;
 border:2px solid #d4af37;
 border-radius:10px;
-box-shadow:0 0 25px rgba(212,175,55,.4);
+box-shadow:0 0 20px rgba(212,175,55,.3);
 }
 
 .about-content h4{
@@ -230,6 +231,7 @@ color:#d4af37;
 .practice{
 padding:90px 70px;
 text-align:center;
+background:#050505;
 }
 
 .practice h2{
@@ -340,6 +342,7 @@ padding:20px;
 text-align:center;
 background:#000;
 border-top:1px solid #d4af37;
+font-size:16px;
 }
 
 /* WHATSAPP */
@@ -454,6 +457,8 @@ text-align:center;
 
 <body>
 
+<!-- NAVBAR -->
+
 <nav>
 
 <div class="logo">
@@ -484,6 +489,8 @@ text-align:center;
 
 </nav>
 
+<!-- HERO -->
+
 <section class="hero">
 
 <div class="hero-content">
@@ -509,17 +516,21 @@ CONTACT NOW
 
 <div class="hero-image">
 
-<img src="C:/Users/sachi/Download/advocate_site_final/images/profile.png" alt="Advocate">
+<img src="https://raw.githubusercontent.com/MITWPU2022/advocate_site_final/main/images/profile.jpg"
+alt="Advocate Sanjeev Desai">
 
 </div>
 
 </section>
 
+<!-- ABOUT -->
+
 <section class="about" id="about">
 
 <div class="about-image">
 
-<img src="C:/Users/sachi/Download/advocate_site_final/images/profile.png" alt="Profile">
+<img src="https://raw.githubusercontent.com/MITWPU2022/advocate_site_final/main/images/profile.jpg"
+alt="Advocate Sanjeev Desai">
 
 </div>
 
@@ -532,8 +543,8 @@ CONTACT NOW
 <p>
 I am Advocate Sanjeev Desai, practicing in Pune
 with over 22 years of experience in handling and
-successfully resolving Civil, Criminal,
-Family and Labour Court cases.
+successfully resolving a wide range of Civil,
+Criminal, Family and Labour Court cases.
 </p>
 
 <div class="info">
@@ -559,6 +570,8 @@ Legal Services
 
 </section>
 
+<!-- PRACTICE -->
+
 <section class="practice" id="practice">
 
 <h2>PRACTICE AREAS</h2>
@@ -566,60 +579,88 @@ Legal Services
 <div class="practice-grid">
 
 <div class="card">
+
 <i class="fa-solid fa-gavel"></i>
+
 <h3>CIVIL LAW</h3>
+
 <p>
 Land matters, Succession certificate,
-Tenant disputes, Corporation disputes.
+Tenant disputes, Corporation disputes etc.
 </p>
+
 </div>
 
 <div class="card">
+
 <i class="fa-solid fa-scale-balanced"></i>
+
 <h3>CRIMINAL LAW</h3>
+
 <p>
 Bail, Anticipatory Bail, Fraud,
-Cheque bouncing, Defamation.
+Cheque bouncing, Defamation cases.
 </p>
+
 </div>
 
 <div class="card">
+
 <i class="fa-solid fa-people-group"></i>
+
 <h3>FAMILY LAW</h3>
+
 <p>
 Divorce, Maintenance, 498A,
 Domestic Violence, Mutual Consent.
 </p>
+
 </div>
 
 <div class="card">
+
 <i class="fa-solid fa-briefcase"></i>
+
 <h3>LABOUR LAW</h3>
+
 <p>
 Handling all Labour Court
 and industrial dispute matters.
 </p>
+
 </div>
 
 </div>
 
 </section>
+
+<!-- EXPERIENCE -->
 
 <section class="experience" id="experience">
 
 <div class="left">
+
 <h1>22+</h1>
+
 <h3>YEARS OF EXPERIENCE</h3>
+
 </div>
 
 <div class="right">
+
 <p>✔ Successfully handled thousands of cases.</p>
+
 <p>✔ Personalized attention to every client.</p>
+
 <p>✔ Strong courtroom presence and legal knowledge.</p>
+
 <p>✔ Dedicated legal solutions with trust and justice.</p>
+
 </div>
 
 </section>
+
+<!-- CONTACT -->
 
 <section class="contact" id="contact">
 
@@ -635,7 +676,9 @@ and industrial dispute matters.
 <p>
 <i class="fa-solid fa-location-dot"></i>
 Kedar Empire Building, 4th Floor,
-Paud Phata, Karve Road, Pune
+Paud Phata, near Dashbhuja Ganpati Mandir,
+near Nal Stop Metro Station,
+opp. Savarkar Bridge, Karve Road, Pune.
 </p>
 
 <p>
@@ -655,14 +698,25 @@ src="https://maps.google.com/maps?q=paud%20phata%20pune&t=&z=13&ie=UTF8&iwloc=&o
 
 </section>
 
+<!-- FOOTER -->
+
 <footer>
+
 © 2025 Adv. Sanjeev Desai Legal Services.
 All Rights Reserved.
+
 </footer>
 
-<a href="https://wa.me/919850891434" class="whatsapp">
+<!-- WHATSAPP -->
+
+<a href="https://wa.me/919850891434"
+class="whatsapp"
+target="_blank">
+
 <i class="fa-brands fa-whatsapp"></i>
+
 </a>
 
 </body>
+
 </html>
